@@ -14,6 +14,20 @@
         url("../fonts/Manrope-Medium.woff") format("woff");
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     min-width: 320px;
     font-family: "Manrope", sans-serif;
@@ -21,4 +35,68 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+}
+
+.container {
+    margin: 36px 40px;
+    background-color: rgba(235, 240, 250, 1);
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col:first-child {
+    max-width: 538px;
+    padding: 72px;
+    align-self: center;
+}
+
+.col .title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #1F4284;
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+
+.col .text {
+    color: #727272;
+    font-size: 17px;
+    line-height: 27.2px;
+    margin-bottom: 36px;
+}
+
+.button {
+    background-color: #244C98;
+    padding: 12px 12px 12px 24px;
+    border-radius: 60px;
+    border: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button img {
+    width: 44px;
+    height: 44px;
+    margin-left: 48px;
+}
+
+.col .main-img {
+    width: 100%;
+    max-width: 910px;
+    height: auto;
 }
