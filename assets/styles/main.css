@@ -23,12 +23,8 @@
     outline: 0;
 }
 
-html,
 body {
     height: 100%;
-}
-
-body {
     min-width: 320px;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -99,6 +95,123 @@ body {
     width: 100%;
     max-width: 910px;
     height: auto;
+}
+
+.modal {
+    width: 100%;
+    max-width: 500px;
+    height: 575px;
+    padding: 24px;
+    background-color: rgba(240, 244, 252, 1);
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 4px;
+}
+
+.modal-close button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.78px;
+    color: rgba(50, 50, 50, 1);
+    margin-bottom: 14px;
+}
+
+.modal-body input {
+    width: 100%;
+    max-width: 452px;
+    height: 73px;
+    border: 0;
+    background-color: rgba(215, 226, 246, 1);
+    border-radius: 10px;
+    padding-left: 24px;
+}
+
+.modal-body div:first-child input {
+    margin-bottom: 4px;
+}
+
+.modal-body div:nth-child(2) input {
+    margin-bottom: 24px;
+}
+
+.modal-body input::placeholder {
+    color: rgba(31, 66, 132, 1);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.modal-body .checkbox {
+    display: flex;
+    align-items: center;
+    color: rgba(50, 50, 50, 1);
+    line-height: 24.59px;
+    margin-bottom: 24px;
+}
+
+.modal-body .checkbox input {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(50, 50, 50, 1);
+    margin-right: 17px;
+}
+
+.modal-body a {
+    text-decoration: none;
+    color: rgba(36, 76, 152, 1);
+}
+
+.modal-body .recovery {
+    margin-bottom: 36px;
+}
+
+.modal-body .recovery a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27.32px;
+}
+
+.sign-in button, .sign-up a {
+    background-color: #244C98;
+    width: 100%;
+    max-width: 452px;
+    padding: 18px 0;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.sign-up a {
+    background: 0;
+    border: 1px solid rgba(36, 76, 152, 1);
+    color: rgba(36, 76, 152, 1);
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1440px) {

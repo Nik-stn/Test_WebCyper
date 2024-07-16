@@ -26,6 +26,24 @@
             </div>
         </div>
     </main>
+    <dialog class="modal">
+        <div class="modal-close">
+            <button id="close-modal-btn"><img src="assets/images/icon2.svg" alt=""></button>
+        </div>
+        <div id="modal-box">
+            <h1 class="modal-title">Войти в систему</h1>
+            <form action="" class="modal-form">
+                <div class="modal-body">
+                    <div><input type="text" placeholder="Email/Телефон" required></div>
+                    <div><input type="password" placeholder="Пароль" required></div>
+                    <div class="checkbox"><input type="checkbox" id="checkbox"><label for="checkbox">Запомнить пароль</label></div>
+                    <div class="recovery"><a href="#">Восстановить</a></div>
+                    <div class="sign-in"><button type="submit">Войти</button></div>
+                    <div class="sign-up"><a href="#">Зарегистрироваться</a></div>
+                </div>
+            </form>
+        </div>
+    </dialog>
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>
